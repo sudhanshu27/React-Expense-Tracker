@@ -57,9 +57,10 @@ const TransactionsComponent = (props) => {
     );
     updateTxn(txn);
   };
-
+ 
   useEffect(() => {
     filterData(searchText);
+    // eslint-disable-next-line
   }, [props.transaction]);
 
   return (
